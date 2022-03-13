@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户注册"
+            android:gravity="center"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText,MissingConstraints" android:id="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+            android:id="@+id/regist_uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:lines="1"
+            android:hint="请输入用户名"
+            tools:ignore="HardcodedText,MissingConstraints"
+            android:layout_marginTop="67dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+    </EditText>
+    <EditText
+            android:id="@+id/regist_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"
+            android:lines="1"
+            android:paddingTop="20dp"
+            tools:ignore="HardcodedText,MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@+id/regist_uname" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+    </EditText>
+    <EditText
+            android:id="@+id/regist_pwd02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="再次输入密码"
+            android:lines="1"
+            android:paddingTop="20dp"
+            tools:ignore="HardcodedText,MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@+id/regist_pwd" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+    </EditText>
+    <Button
+            android:layout_margin="80dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="确定注册"
+            android:textSize="18sp"
+            android:onClick="register_Onclick"
+            tools:ignore="HardcodedText,MissingConstraints"
+            android:layout_marginTop="21dp"
+            app:layout_constraintTop_toBottomOf="@+id/regist_pwd02" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

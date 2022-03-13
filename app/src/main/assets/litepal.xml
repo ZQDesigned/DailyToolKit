@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="UserData"/>
+
+    <version value="1"/>
+
+    <list>
+        <!--        实体类对应库中的表-->
+        <mapping class="UTSSG.ZQDesigned.Namecode.User"/>
+    </list>
+</litepal>
