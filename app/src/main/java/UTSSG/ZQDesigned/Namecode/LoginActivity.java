@@ -17,7 +17,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
-
     public void button_Onclick(View view) {
         // Toast.makeText(this, "登录成功！", Toast.LENGTH_SHORT).show();
         EditText editText1 = findViewById(R.id.username);
@@ -27,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
         if(editText1.getText().toString().equals("") || editText2.getText().toString().equals("")) {
             Toast.makeText(this, "用户名或密码为空!", Toast.LENGTH_SHORT).show();
         }else{
-            //数据库查询操作
+            //数据库查询操作，查询数据库中是否存在该用户，如果存在则跳转到主页，否则提示用户不存在
             List<User> users = DataSupport.where("username=? and password=?", editText1.getText().toString(), editText2.getText().toString()).find(User.class);
             if(users.size() == 1){
                 //登陆成功后跳转到MainActivity界面
