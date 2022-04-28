@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         TextView result = findViewById(R.id.output);
         String nameStr = name.getText().toString();
         byte[] codeBit = nameStr.getBytes();// 获取汉字的字节数组
-        if(codeBit.length>2) {//判断
+/*        if(codeBit.length>2) {//判断
             Toast.makeText(this, "禁止转换多个字！", Toast.LENGTH_SHORT).show();
             return;
         }else if(codeBit.length<2){//判断
@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         }else {
             codeBit[0]-=160;//提取区位码
             codeBit[1]-=160;
-        }
-            result.setText("--转换结果-->"+(codeBit[0])+(codeBit[1]));
+        }*/
+            result.setText(nameStr+"--转换结果-->"+(codeBit[0])+(codeBit[1]));
             //输出汉字转区位码拼接结果
             //你--转换为区位码-->3667
         }
