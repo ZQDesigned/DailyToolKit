@@ -28,13 +28,22 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "禁止转换多个字！", Toast.LENGTH_SHORT).show();
             return;
         }else if(codeBit.length<2){//判断
-            Toast.makeText(this, "禁您输入的不是汉字！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "您输入的不是汉字！", Toast.LENGTH_SHORT).show();
             return;
         }else {
             codeBit[0]-=160;//提取区位码
             codeBit[1]-=160;
         }
+        Toast.makeText(this, "正在查询......", Toast.LENGTH_SHORT).show();
+        if(codeBit[0]<10&&codeBit[1]<10){
+            result.setText(nameStr+"--转换结果-->"+"0"+(codeBit[0])+"0"+(codeBit[1]));
+        }else if(codeBit[0]<10){
+            result.setText(nameStr+"--转换结果-->"+"0"+(codeBit[0])+(codeBit[1]));
+        }else if(codeBit[1]<10){
+            result.setText(nameStr+"--转换结果-->"+(codeBit[0])+"0"+(codeBit[1]));
+        }else {
             result.setText(nameStr+"--转换结果-->"+(codeBit[0])+(codeBit[1]));
+        }
             //输出汉字转区位码拼接结果
             //你--转换为区位码-->3667
         }
