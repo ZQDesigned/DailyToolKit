@@ -9,8 +9,8 @@ android {
         applicationId "UTSSG.ZQDesigned.Namecode"
         minSdk 25
         targetSdk 31
-        versionCode 20220313
-        versionName "ALPHA-1.0.1"
+        versionCode 2022042901
+        versionName "RELEASE-1.1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
