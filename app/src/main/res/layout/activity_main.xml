@@ -3,6 +3,21 @@
                                                    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                                    android:layout_height="match_parent">
 
+    <TextView
+            android:text="由2023届2班邹权编写"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/Textview3"
+            android:textSize="20sp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497" android:layout_marginTop="51dp"
+            app:layout_constraintTop_toBottomOf="@+id/TextView2"/>
+    <TextView
+            android:text="本溪市第一中学专版"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/TextView2"
+            android:textSize="20sp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="73dp" app:layout_constraintTop_toBottomOf="@+id/button2"/>
     <Button
             android:text="查询"
             android:layout_width="wrap_content"
