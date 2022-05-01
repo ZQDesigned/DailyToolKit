@@ -1,6 +1,7 @@
 package UTSSG.ZQDesigned.Namecode;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -25,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
         String nameStr = name.getText().toString();
         byte[] codeBit = nameStr.getBytes("gb2312");// 获取汉字的字节数组
         if(codeBit.length>2) {//判断
-            Toast.makeText(this, "禁止转换多个字！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "禁止转换多个字！", Toast.LENGTH_LONG).show();
             return;
         }else if(codeBit.length<2){//判断
-            Toast.makeText(this, "您输入的不是汉字！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "您输入的不是汉字！", Toast.LENGTH_LONG).show();
             return;
         }else {
             codeBit[0]-=160;//提取区位码
@@ -47,5 +48,8 @@ public class MainActivity extends AppCompatActivity {
             //输出汉字转区位码拼接结果
             //你--转换为区位码-->3667
         }
-
-}
+        public void button1_Onclick(View view) {
+            Intent intent=new Intent(MainActivity.this,DonateActivity.class);
+            startActivity(intent);
+        }
+    }
