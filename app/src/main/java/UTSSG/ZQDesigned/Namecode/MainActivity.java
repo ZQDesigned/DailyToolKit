@@ -26,27 +26,30 @@ public class MainActivity extends AppCompatActivity {
         String nameStr = name.getText().toString();
         byte[] codeBit = nameStr.getBytes("gb2312");// 获取汉字的字节数组
         if(codeBit.length>2) {//判断
-            Toast.makeText(this, "禁止转换多个字！", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "禁止转换多个字！", Toast.LENGTH_SHORT).show();
             return;
         }else if(codeBit.length<2){//判断
-            Toast.makeText(this, "您输入的不是汉字！", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "您输入的不是汉字！", Toast.LENGTH_SHORT).show();
+            //弹出对话框
             return;
         }else {
             codeBit[0]-=160;//提取区位码
             codeBit[1]-=160;
         }
-        Toast.makeText(this, "正在查询......", Toast.LENGTH_SHORT).show();
-        if(codeBit[0]<10&&codeBit[1]<10){
-            result.setText(nameStr+"--转换结果-->"+"0"+(codeBit[0])+"0"+(codeBit[1]));
-        }else if(codeBit[0]<10){
-            result.setText(nameStr+"--转换结果-->"+"0"+(codeBit[0])+(codeBit[1]));
-        }else if(codeBit[1]<10){
-            result.setText(nameStr+"--转换结果-->"+(codeBit[0])+"0"+(codeBit[1]));
+        if(codeBit[0]<0|codeBit[1]<0){
+            Toast.makeText(this, "您输入的不是汉字！", Toast.LENGTH_SHORT).show();
         }else {
-            result.setText(nameStr+"--转换结果-->"+(codeBit[0])+(codeBit[1]));
+            Toast.makeText(this, "正在查询......", Toast.LENGTH_SHORT).show();
+            if (codeBit[0] < 10 && codeBit[1] < 10) {
+                result.setText(nameStr + "--转换结果-->" + "0" + (codeBit[0]) + "0" + (codeBit[1]));
+            } else if (codeBit[0] < 10) {
+                result.setText(nameStr + "--转换结果-->" + "0" + (codeBit[0]) + (codeBit[1]));
+            } else if (codeBit[1] < 10) {
+                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + "0" + (codeBit[1]));
+            } else {
+                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]));
+            }
         }
-            //输出汉字转区位码拼接结果
-            //你--转换为区位码-->3667
         }
         public void button1_Onclick(View view) {
             Intent intent=new Intent(MainActivity.this,DonateActivity.class);

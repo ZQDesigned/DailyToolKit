@@ -9,15 +9,15 @@ android {
         applicationId "UTSSG.ZQDesigned.Namecode"
         minSdk 25
         targetSdk 31
-        versionCode 22050108
-        versionName "RELEASE-1.2.0"
+        versionCode 220501013
+        versionName "RELEASE-1.2.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
