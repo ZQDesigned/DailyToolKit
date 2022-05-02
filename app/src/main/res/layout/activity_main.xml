@@ -92,7 +92,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:onClick="button1_Onclick"/>
     <TextView
-            android:text="特别鸣谢：by：Han | 情非得已c（极客软件：搞机客 开发者）提供多字高效转换思路及Demo"
+            android:text="特别鸣谢：by：Han | 情非得已c（极客软件：搞机客 开发者）提供多字高效转换思路及Demo，并优化核心代码"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/textView4"
             tools:layout_editor_absoluteX="0dp" app:layout_constraintBottom_toBottomOf="parent"
