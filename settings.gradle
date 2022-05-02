@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "姓名代码查询器"
 include ':app'
+include ':appdemo'

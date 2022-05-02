@@ -36,129 +36,30 @@ public class MainActivity extends AppCompatActivity {
                     })
                     .setIcon(android.R.drawable.ic_dialog_alert)//设置图标
                     .show();//在按键响应事件中显示此对话框
-        } else if(codeBit.length==2) {//判断
-            codeBit[0] -=160;//提取区位码
-            codeBit[1] -=160;
-            if(codeBit[0]<0|codeBit[1]<0){
-                Toast.makeText(this, "您输入的不是汉字！", Toast.LENGTH_SHORT).show();
-                new AlertDialog.Builder(MainActivity.this).setTitle("提示")//设置对话框标题
-                        .setMessage("您输入的不是汉字！")//设置显示的内容
-                        .setNegativeButton("返回", (dialog, which) -> {
-                        })
-                        .setIcon(android.R.drawable.ic_dialog_alert)//设置图标
-                        .show();//在按键响应事件中显示此对话框
-            } else {
-                Toast.makeText(this, "正在查询......", Toast.LENGTH_SHORT).show();
-                if (codeBit[0] < 10 && codeBit[1] < 10) {
-                    result.setText(nameStr + "--转换结果-->" + "0" + (codeBit[0]) + "0" + (codeBit[1]));
-                } else if (codeBit[0] < 10) {
-                    result.setText(nameStr + "--转换结果-->" + "0" + (codeBit[0]) + (codeBit[1]));
-                } else if (codeBit[1] < 10) {
-                    result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + "0" + (codeBit[1]));
-                } else {
-                    result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]));
-                }
-            }
-        }else if(codeBit.length==4) {//判断
-            codeBit[0] -= 160;//提取区位码
-            codeBit[1] -= 160;
-            codeBit[2] -= 160;
-            codeBit[3] -= 160;
-            if(codeBit[0]<0|codeBit[1]<0|codeBit[2]<0|codeBit[3]<0){
-                Toast.makeText(this, "您输入的不是纯汉字！", Toast.LENGTH_SHORT).show();
-                new AlertDialog.Builder(MainActivity.this).setTitle("提示")//设置对话框标题
-                        .setMessage("您输入的不是纯汉字！")//设置显示的内容
-                        .setNegativeButton("返回", (dialog, which) -> {
-                        })
-                        .setIcon(android.R.drawable.ic_dialog_alert)//设置对话框图标
-                        .show();//在按键响应事件中显示此对话框
-            } else if (codeBit[0] < 10 && codeBit[1] < 10 && codeBit[2] < 10 && codeBit[3] < 10) {
-                result.setText(nameStr + "--转换结果-->" + "0" + (codeBit[0]) + "0" + (codeBit[1]) + "0" + (codeBit[2]) + "0" + (codeBit[3]));
-            } else if (codeBit[0] < 10 && codeBit[1] < 10 && codeBit[2] < 10) {
-                result.setText(nameStr + "--转换结果-->" + "0" + (codeBit[0]) + "0" + (codeBit[1]) + "0" + (codeBit[2]) + (codeBit[3]));
-            } else if (codeBit[0] < 10 && codeBit[1] < 10) {
-                result.setText(nameStr + "--转换结果-->" + "0" + (codeBit[0]) + "0" + (codeBit[1]) + (codeBit[2]) + (codeBit[3]));
-            } else if (codeBit[0] < 10) {
-                result.setText(nameStr + "--转换结果-->" + "0" + (codeBit[0]) + (codeBit[1]) + (codeBit[2]) + (codeBit[3]));
-            } else if (codeBit[1] < 10 && codeBit[2] < 10 && codeBit[3] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + "0" + (codeBit[1]) + "0" + (codeBit[2]) + "0" + (codeBit[3]));
-            } else if (codeBit[1] < 10 && codeBit[2] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + "0" + (codeBit[1]) + "0" + (codeBit[2]) + (codeBit[3]));
-            } else if (codeBit[1] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + "0" + (codeBit[1]) + (codeBit[2]) + (codeBit[3]));
-            } else if (codeBit[2] < 10 && codeBit[3] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]) + "0" + (codeBit[2]) + "0" + (codeBit[3]));
-            } else if (codeBit[2] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]) + "0" + (codeBit[2]) + (codeBit[3]));
-            } else if (codeBit[3] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]) + (codeBit[2]) + "0" + (codeBit[3]));
-            } else {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]) + (codeBit[2]) + (codeBit[3]));
-            }
-        }else if(codeBit.length==6) {//判断
-            codeBit[0] -= 160;//提取区位码
-            codeBit[1] -= 160;
-            codeBit[2] -= 160;
-            codeBit[3] -= 160;
-            codeBit[4] -= 160;
-            codeBit[5] -= 160;
-            if(codeBit[0]<0|codeBit[1]<0|codeBit[2]<0|codeBit[3]<0|codeBit[4]<0|codeBit[5]<0){
-                Toast.makeText(this, "您输入的不是纯汉字！", Toast.LENGTH_SHORT).show();
-                new AlertDialog.Builder(MainActivity.this).setTitle("提示")//设置对话框标题
-                        .setMessage("您输入的不是纯汉字！")//设置显示的内容
-                        .setNegativeButton("返回", (dialog, which) -> {
-                        })
-                        .setIcon(android.R.drawable.ic_dialog_alert)//设置对话框图标
-                        .show();//在按键响应事件中显示此对话框
-            } else if (codeBit[0] < 10 && codeBit[1] < 10 && codeBit[2] < 10 && codeBit[3] < 10 && codeBit[4] < 10 && codeBit[5] < 10) {
-                result.setText(nameStr + "--转换结果-->" + "0" + (codeBit[0]) + "0" + (codeBit[1]) + "0" + (codeBit[2]) + "0" + (codeBit[3]) + "0" + (codeBit[4]) + "0" + (codeBit[5]));
-            } else if (codeBit[0] < 10 && codeBit[1] < 10 && codeBit[2] < 10 && codeBit[3] < 10 && codeBit[4] < 10) {
-                result.setText(nameStr + "--转换结果-->" + "0" + (codeBit[0]) + "0" + (codeBit[1]) + "0" + (codeBit[2]) + "0" + (codeBit[3]) + "0" + (codeBit[4]) + (codeBit[5]));
-            } else if (codeBit[0] < 10 && codeBit[1] < 10 && codeBit[2] < 10 && codeBit[3] < 10) {
-                result.setText(nameStr + "--转换结果-->" + "0" + (codeBit[0]) + "0" + (codeBit[1]) + "0" + (codeBit[2]) + "0" + (codeBit[3]) + (codeBit[4]) + (codeBit[5]));
-            } else if (codeBit[0] < 10 && codeBit[1] < 10 && codeBit[2] < 10) {
-                result.setText(nameStr + "--转换结果-->" + "0" + (codeBit[0]) + "0" + (codeBit[1]) + "0" + (codeBit[2]) + (codeBit[3]) + (codeBit[4]) + (codeBit[5]));
-            } else if (codeBit[0] < 10 && codeBit[1] < 10) {
-                result.setText(nameStr + "--转换结果-->" + "0" + (codeBit[0]) + "0" + (codeBit[1]) + (codeBit[2]) + (codeBit[3]) + (codeBit[4]) + (codeBit[5]));
-            } else if (codeBit[0] < 10) {
-                result.setText(nameStr + "--转换结果-->" + "0" + (codeBit[0]) + (codeBit[1]) + (codeBit[2]) + (codeBit[3]) + (codeBit[4]) + (codeBit[5]));
-            } else if (codeBit[1] < 10 && codeBit[2] < 10 && codeBit[3] < 10 && codeBit[4] < 10 && codeBit[5] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + "0" + (codeBit[1]) + "0" + (codeBit[2]) + "0" + (codeBit[3]) + "0" + (codeBit[4]) + "0" + (codeBit[5]));
-            } else if (codeBit[1] < 10 && codeBit[2] < 10 && codeBit[3] < 10 && codeBit[4] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + "0" + (codeBit[1]) + "0" + (codeBit[2]) + "0" + (codeBit[3]) + "0" + (codeBit[4]) + (codeBit[5]));
-            } else if (codeBit[1] < 10 && codeBit[2] < 10 && codeBit[3] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + "0" + (codeBit[1]) + "0" + (codeBit[2]) + "0" + (codeBit[3]) + (codeBit[4]) + (codeBit[5]));
-            } else if (codeBit[1] < 10 && codeBit[2] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + "0" + (codeBit[1]) + "0" + (codeBit[2]) + (codeBit[3]) + (codeBit[4]) + (codeBit[5]));
-            } else if (codeBit[1] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + "0" + (codeBit[1]) + (codeBit[2]) + (codeBit[3]) + (codeBit[4]) + (codeBit[5]));
-            } else if (codeBit[2] < 10 && codeBit[3] < 10 && codeBit[4] < 10 && codeBit[5] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]) + "0" + (codeBit[2]) + "0" + (codeBit[3]) + "0" + (codeBit[4]) + "0" + (codeBit[5]));
-            } else if (codeBit[2] < 10 && codeBit[3] < 10 && codeBit[4] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]) + "0" + (codeBit[2]) + "0" + (codeBit[3]) + "0" + (codeBit[4]) + (codeBit[5]));
-            } else if (codeBit[2] < 10 && codeBit[3] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]) + "0" + (codeBit[2]) + "0" + (codeBit[3]) + (codeBit[4]) + (codeBit[5]));
-            } else if (codeBit[2] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]) + "0" + (codeBit[2]) + (codeBit[3]) + (codeBit[4]) + (codeBit[5]));
-            } else if (codeBit[3] < 10 && codeBit[4] < 10 && codeBit[5] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]) + (codeBit[2]) + "0" + (codeBit[3]) + "0" + (codeBit[4]) + "0" + (codeBit[5]));
-            } else if (codeBit[3] < 10 && codeBit[4] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]) + (codeBit[2]) + "0" + (codeBit[3]) + "0" + (codeBit[4]) + (codeBit[5]));
-            } else if (codeBit[3] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]) + (codeBit[2]) + "0" + (codeBit[3]) + (codeBit[4]) + (codeBit[5]));
-            } else if (codeBit[4] < 10 && codeBit[5] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]) + (codeBit[2]) + (codeBit[3]) + "0" + (codeBit[4]) + "0" + (codeBit[5]));
-            } else if (codeBit[4] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]) + (codeBit[2]) + (codeBit[3]) + "0" + (codeBit[4]) + (codeBit[5]));
-            } else if (codeBit[5] < 10) {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]) + (codeBit[2]) + (codeBit[3]) + (codeBit[4]) + "0" + (codeBit[5]));
-            } else {
-                result.setText(nameStr + "--转换结果-->" + (codeBit[0]) + (codeBit[1]) + (codeBit[2]) + (codeBit[3]) + (codeBit[4]) + (codeBit[5]));
-            }
+        } else if(codeBit.length%2==0) {//判断
+                    StringBuilder sb = new StringBuilder();
+                    for (byte codeBit_tmp:codeBit) {
+                        byte tmp= (byte) (codeBit_tmp-160);
+                        if (tmp < 0) {
+                            Toast.makeText(this, "您输入的内容不合法！", Toast.LENGTH_SHORT).show();
+                            new AlertDialog.Builder(MainActivity.this).setTitle("提示")//设置对话框标题
+                                    .setMessage("您输入的内容不合法！")//设置显示的内容
+                                    .setNegativeButton("返回", (dialog, which) -> {
+                                    })
+                                    .setIcon(android.R.drawable.ic_dialog_alert)//设置对话框图标
+                                    .show();//在按键响应事件中显示此对话框
+                        }
+                        else if (tmp <= 10) {
+                            sb.append(0);
+                        }
+                        sb.append(tmp);
+                    }
+                    Toast.makeText(this, "正在查询......", Toast.LENGTH_SHORT).show();
+                    result.setText(nameStr+"\n"+"↓↓转换结果↓↓"+"\n"+sb.toString().replaceAll(".{4}", "$0 "));
         }else{
-            Toast.makeText(this, "您输入的不是汉字！", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "您输入的内容不合法！", Toast.LENGTH_SHORT).show();
             new AlertDialog.Builder(MainActivity.this).setTitle("提示")//设置对话框标题
-                    .setMessage("您输入的不是汉字！")//设置显示的内容
+                    .setMessage("您输入的内容不合法！")//设置显示的内容
                     .setNegativeButton("返回", (dialog, which) -> {
                     })
                     .setIcon(android.R.drawable.ic_dialog_alert)//设置对话框图标
