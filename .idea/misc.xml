@@ -10,6 +10,7 @@
         <entry key="..\:/AndroidStudioProjects/Namecode/app/src/main/res/layout/activity_main_tmp.xml" value="0.31979166666666664" />
         <entry key="..\:/AndroidStudioProjects/Namecode/app/src/main/res/layout/activity_register.xml" value="0.375" />
         <entry key="..\:/AndroidStudioProjects/Namecode/app/src/main/res/layout/activity_splash.xml" value="0.2504528985507246" />
+        <entry key="..\:/AndroidStudioProjects/Namecode/appdemo/src/main/res/drawable/bg_permotion_round.xml" value="0.33697916666666666" />
         <entry key="..\:/AndroidStudioProjects/Namecode/appdemo/src/main/res/layout/activity_main.xml" value="0.335" />
       </map>
     </option>
@@ -19,7 +20,7 @@
       <item index="0" class="java.lang.String" itemvalue="android.annotation.SuppressLint" />
     </list>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="jbr-11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16_PREVIEW" project-jdk-name="jbr-11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

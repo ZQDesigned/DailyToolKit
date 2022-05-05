@@ -68,7 +68,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:textSize="16sp"
-            android:textColor="#000000"/>
+            android:textColor="@color/colorTextBlack"/>
     <TextView
             android:text="如果你喜欢，你可以向我捐赠"
             android:layout_width="wrap_content"
@@ -77,9 +77,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:textSize="16sp"
-            android:textColor="#000000"
             app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintTop_toBottomOf="@+id/textView"/>
+            app:layout_constraintTop_toBottomOf="@+id/textView" android:textColor="@color/colorTextBlack"/>
     <Button
             android:text="捐赠"
             android:layout_width="wrap_content"

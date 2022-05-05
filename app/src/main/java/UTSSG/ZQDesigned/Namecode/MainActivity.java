@@ -13,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.UnsupportedEncodingException;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
