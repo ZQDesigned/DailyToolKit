@@ -1,6 +1,5 @@
 plugins {
     id 'com.android.application'
-    id 'kotlin-android'
 }
 
 android {
@@ -10,8 +9,8 @@ android {
         applicationId "UTSSG.ZQDesigned.Namecode"
         minSdk 25
         targetSdk 31
-        versionCode 22050521
-        versionName "RELEASE-1.3.4"
+        versionCode 22050538
+        versionName "RELEASE-1.3.5"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

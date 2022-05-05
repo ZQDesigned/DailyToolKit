@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">姓名代码查询器</string>
+    <string name="app_name">汉字区位码查询器</string>
     <string name="cx">查询</string>
     <string name="textview">TextView</string>
 </resources>
