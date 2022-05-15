@@ -32,15 +32,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView textView = findViewById(R.id.main_text_version);
         textView.setText("版本号：" + appVersionname + "(" + appVersioncode + ")");
-        if (FunctionsToolset.isInstalled("com.android.google.gms")) {
-            new AlertDialog.Builder(this).setTitle("提示")//设置对话框标题
-                    .setMessage("GMS Detected！")//设置显示的内容
-                    .setNegativeButton("返回", null)
-                    .setIcon(android.R.drawable.ic_dialog_alert)//设置图标
-                    .setCancelable(false)//设置点击对话框外部不消失
-                    .show();//在按键响应事件中显示此对话框
+        //if (FunctionsToolset.isInstalled(this, "com.google.android.gms")) {}
+        if (!FunctionsToolset.checkPermission(this, "android.permission.WRITE_EXTERNAL_STORAGE")) {
+            FunctionsToolset.requestPermission(this, "android.permission.WRITE_EXTERNAL_STORAGE",1);
         }
-        }
+    }
 
 
         @Override

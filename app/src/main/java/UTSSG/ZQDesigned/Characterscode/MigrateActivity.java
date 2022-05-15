@@ -1,6 +1,8 @@
 package UTSSG.ZQDesigned.Characterscode;
 
 import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MigrateActivity extends AppCompatActivity {
@@ -11,4 +13,7 @@ public class MigrateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_migrate);
     }
 
+    public void MReturn_OnClick(View view) {
+        this.finish();
+    }
 }
