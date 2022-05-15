@@ -2,49 +2,78 @@
 <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <Button
-            android:text="微信"
-            android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="47dp"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="38dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:longClickable="false"
+            android:onClick="Return_OnClick"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:text="感谢您的捐赠！"
+            android:textColor="#00B0FF"
+            android:textSize="20sp" />
+
+        <Button
             android:id="@+id/wechatpay"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="31dp"
-            app:layout_constraintStart_toEndOf="@+id/textView3"
-            app:layout_constraintEnd_toStartOf="@+id/wechatpay2"
-            android:onClick="Wechatpay_OnClick"/>
-    <Button
-            android:text="支付宝"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="Wechatpay_OnClick"
+            android:text="微信" />
+
+        <Button
             android:id="@+id/wechatpay2"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            app:layout_constraintStart_toEndOf="@+id/wechatpay"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="31dp"
-            android:onClick="Alipay_OnClick"/>
-    <TextView
-            android:text="感谢您的捐赠！"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView3"
-            android:textSize="20sp"
-            android:textColor="#00B0FF"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="40dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/wechatpay"/>
-    <ImageView
-            android:layout_width="318dp"
-            android:layout_height="601dp"
-            app:srcCompat="@drawable/wechatpay"
-            android:id="@+id/imageView"
-            android:layout_marginTop="7dp"
-            app:layout_constraintTop_toBottomOf="@+id/wechatpay"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:onClick="Alipay_OnClick"
+            android:text="支付宝" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="413dp"
+        android:layout_height="654dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="-1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/donate_image"
+                android:layout_width="match_parent"
+                android:layout_height="601dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="95dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/wechatpay" />
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

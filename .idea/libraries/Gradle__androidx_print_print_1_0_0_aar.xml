@@ -1,15 +1,20 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.print:print:1.0.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c125c1b0abfdb113892bf57a1c66ff43/transformed/print-1.0.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b45b6c1dd07db4030f83ef8907baf60e/transformed/print-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/137fae5cb8b43fd4d77cda20fb259169/transformed/print-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b618f929228947d1fd03b4a852d85b00/transformed/print-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9aa7ad498fdc0d4e96363e35a72b3236/transformed/print-1.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c125c1b0abfdb113892bf57a1c66ff43/transformed/print-1.0.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c125c1b0abfdb113892bf57a1c66ff43/transformed/print-1.0.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c125c1b0abfdb113892bf57a1c66ff43/transformed/print-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/055f3dc07bcd7b3d5dd4303eb43c1ccd/transformed/print-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e7314df524c816d5186781f95f4204b9/transformed/print-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0c2f72a59be510cabd192dbf1dcdec7e/transformed/print-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/888789be6554013b3b7e7672410ef5c6/transformed/print-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/b45b6c1dd07db4030f83ef8907baf60e/transformed/print-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b45b6c1dd07db4030f83ef8907baf60e/transformed/print-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b45b6c1dd07db4030f83ef8907baf60e/transformed/print-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

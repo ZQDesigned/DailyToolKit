@@ -5,18 +5,35 @@ plugins {
 android {
     compileSdk 31
 
+    signingConfigs {
+        debug {
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
     defaultConfig {
         applicationId "UTSSG.ZQDesigned.Namecode"
         minSdk 25
         targetSdk 31
-        versionCode 22050538
+        versionCode 22050544
         versionName "RELEASE-1.3.5"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        targetSdkVersion 32
+        minSdkVersion 25
+        signingConfig signingConfigs.debug
+        multiDexEnabled true
     }
     buildTypes {
         release {
             minifyEnabled true
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -24,6 +41,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
+    compileSdkVersion 31
+    buildToolsVersion '32.0.0'
+    namespace 'UTSSG.ZQDesigned.Characterscode'
+    ndkVersion '21.4.7075529'
 }
 
 /** 移除无效耗时 lint Task */
@@ -46,12 +67,6 @@ dependencies {
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     testImplementation 'junit:junit:4.13.2'
-    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.7'
     implementation 'com.geyifeng.immersionbar:immersionbar:3.2.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'com.highcapable.yukihookapi:api:1.0.80'
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'androidx.databinding:viewbinding:7.1.3'
 }
