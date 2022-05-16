@@ -7,70 +7,81 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="38dp"
-        android:orientation="horizontal">
-
-        <ImageButton
-            android:id="@+id/return_menu"
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:background="#FFFFFF"
-            android:onClick="MReturn_OnClick"
-            app:srcCompat="?attr/homeAsUpIndicator" />
-
-        <TextView
-            android:id="@+id/title_migrate"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center|left"
-            android:text="汉字区位码查询"
-            android:textSize="20sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView6"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:orientation="horizontal"
+            android:paddingBottom="24dp">
+
+            <ImageButton
+                android:id="@+id/return_menu"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:onClick="MReturn_OnClick"
+                app:srcCompat="?attr/homeAsUpIndicator" />
+
+            <TextView
+                android:id="@+id/title_migrate"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="汉字区位码查询"
+                android:textSize="20sp" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="315dp"
-                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:visibility="gone" />
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="39dp"
-                    android:hint="hint" />
-
-            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="24sp"
+                android:visibility="gone" />
 
             <Switch
                 android:id="@+id/switch2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Switch" />
+                android:text="长文字转换支持" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="39dp"
+                        android:hint="请输入查询内容" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
 
         </LinearLayout>
-
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
 
     </LinearLayout>
 </LinearLayout>
