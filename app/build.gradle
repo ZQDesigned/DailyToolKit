@@ -16,8 +16,8 @@ android {
         applicationId "UTSSG.ZQDesigned.Namecode"
         minSdk 25
         targetSdk 31
-        versionCode 22050544
-        versionName "RELEASE-1.3.5"
+        versionCode 22051627
+        versionName 'RELEASE-1.4.4'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         targetSdkVersion 32
