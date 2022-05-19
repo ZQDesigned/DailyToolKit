@@ -53,15 +53,6 @@
         android:background="@drawable/bg_button_round"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/output_long"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            android:visibility="gone" />
-
         <TextView
             android:id="@+id/output"
             android:layout_width="match_parent"
@@ -119,6 +110,15 @@
             </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
+
+        <EditText
+            android:id="@+id/output_long"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="输出"
+            android:visibility="visible" />
 
     </LinearLayout>
 
