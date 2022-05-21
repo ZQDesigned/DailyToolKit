@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/姓名代码查询器.iml" filepath="$PROJECT_DIR$/.idea/modules/姓名代码查询器.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/姓名代码查询器.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/姓名代码查询器.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/姓名代码查询器.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/姓名代码查询器.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/姓名代码查询器.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/姓名代码查询器.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/姓名代码查询器.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/姓名代码查询器.app.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appdemo/姓名代码查询器.appdemo.iml" filepath="$PROJECT_DIR$/.idea/modules/appdemo/姓名代码查询器.appdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appdemo/姓名代码查询器.appdemo.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/appdemo/姓名代码查询器.appdemo.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appdemo/姓名代码查询器.appdemo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/appdemo/姓名代码查询器.appdemo.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appdemo/姓名代码查询器.appdemo.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/appdemo/姓名代码查询器.appdemo.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/汉字区位码查询器.iml" filepath="$PROJECT_DIR$/.idea/modules/汉字区位码查询器.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appdemo/汉字区位码查询器.appdemo.iml" filepath="$PROJECT_DIR$/.idea/modules/appdemo/汉字区位码查询器.appdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appdemo/汉字区位码查询器.appdemo.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/appdemo/汉字区位码查询器.appdemo.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appdemo/汉字区位码查询器.appdemo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/appdemo/汉字区位码查询器.appdemo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/appdemo/汉字区位码查询器.appdemo.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/appdemo/汉字区位码查询器.appdemo.unitTest.iml" />
     </modules>
   </component>
 </project>
