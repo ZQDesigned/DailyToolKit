@@ -1,6 +1,7 @@
 package UTSSG.ZQDesigned.Characterscode;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -8,13 +9,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import java.io.UnsupportedEncodingException;
 
 import UTSSG.ZQDesigned.Characterscode.Utils.FunctionsToolset;
 
-public class MigrateActivity extends AppCompatActivity {
+public class MigrateActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,8 +54,8 @@ public class MigrateActivity extends AppCompatActivity {
                 sb.append(codeBit_tmp);
             }
             Toast.makeText(this, "正在查询......", Toast.LENGTH_SHORT).show();
-            result.setText(sb.toString().replaceAll(".{4}", "$0 "));
-            result_long.setText(sb.toString().replaceAll(".{4}", "$0 "));
+            result.setText("转换结果："+sb.toString().replaceAll(".{4}", "$0 "));
+            result_long.setText("转换结果："+sb.toString().replaceAll(".{4}", "$0 "));
         }else{
             Toast.makeText(this, "您输入的内容不合法！", Toast.LENGTH_SHORT).show();
             FunctionsToolset.showDialog(this,"提示","您输入的内容不合法！","返回",android.R.drawable.ic_dialog_alert,false);
