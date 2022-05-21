@@ -81,7 +81,7 @@
                 android:text="查询" />
 
             <Switch
-                android:id="@+id/switch2"
+                android:id="@+id/mode_select"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginLeft="20dp"
