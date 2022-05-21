@@ -3,9 +3,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "姓名代码查询器"
+rootProject.name = "汉字区位码查询器"
 include ':app'
 include ':appdemo'
