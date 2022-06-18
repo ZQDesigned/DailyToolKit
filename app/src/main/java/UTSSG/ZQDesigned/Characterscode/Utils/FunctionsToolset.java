@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.pm.PackageManager;
 
-import UTSSG.ZQDesigned.Characterscode.R;
-
 public class FunctionsToolset {
 
 
@@ -37,7 +35,7 @@ public class FunctionsToolset {
      * 判断是否安装了某个应用
      *
      * @param packageName
-     * @return
+     * @return true 安装了，false 没有安装
      */
     public static boolean isInstalled(Activity activity, String packageName) {
         FunctionsToolset functionsToolset = new FunctionsToolset();
