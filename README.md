@@ -4,4 +4,4 @@
 
 # 特别鸣谢
 
-    * UI修改自： [fankes/TSBattery](https://github.com/fankes/TSBattery)
+UI修改自： [fankes/TSBattery](https://github.com/fankes/TSBattery)
