@@ -40,16 +40,16 @@
 
         <Button
             android:id="@+id/wechatpay"
-            style="@style/Widget.MaterialComponents.Button"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="5dp"
             android:onClick="Wechatpay_OnClick"
             android:text="微信" />
 
         <Button
             android:id="@+id/alipay"
-            style="@style/Widget.MaterialComponents.Button"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"

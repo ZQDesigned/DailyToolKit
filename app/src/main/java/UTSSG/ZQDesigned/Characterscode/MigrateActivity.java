@@ -48,7 +48,7 @@ public class MigrateActivity extends Activity {
                     Toast.makeText(this, "您输入的内容不合法！", Toast.LENGTH_SHORT).show();
                     FunctionsToolset.showDialog(this,"提示","您输入的内容不合法！","返回",android.R.drawable.ic_dialog_alert,false);
                     return;
-                } else if (codeBit_tmp <= 10) {
+                } else if (codeBit_tmp < 10) {
                     sb.append(0);
                 }
                 sb.append(codeBit_tmp);

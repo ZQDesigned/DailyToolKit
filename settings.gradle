@@ -7,4 +7,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "汉字区位码查询器"
 include ':app'
-include ':appdemo'

@@ -19,8 +19,7 @@ android {
         versionCode 22051727
         versionName 'RELEASE-1.4.4'
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        targetSdkVersion 32
+        targetSdkVersion 33
         minSdkVersion 25
         signingConfig signingConfigs.debug
         multiDexEnabled true
@@ -41,7 +40,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
-    compileSdkVersion 32
+    compileSdkVersion 33
     buildToolsVersion '32.1.0-rc1'
     namespace 'UTSSG.ZQDesigned.Characterscode'
     ndkVersion '21.4.7075529'
@@ -63,8 +62,8 @@ tasks.whenTaskAdded {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.7'
     implementation 'com.geyifeng.immersionbar:immersionbar:3.2.2'
