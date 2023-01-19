@@ -11,7 +11,7 @@ public class FunctionsToolset {
      * 申请权限
      *
      * @param permissionName 权限名称
-     * @param requestCode 请求码
+     * @param requestCode    请求码
      */
     public static void requestPermission(Activity activity, String permissionName, int requestCode) {
         if (activity.checkSelfPermission(permissionName) != PackageManager.PERMISSION_GRANTED) {
@@ -23,7 +23,7 @@ public class FunctionsToolset {
      * 判断是否有某个权限
      *
      * @param permissionName 权限名称
-     * @param activity 当前活动
+     * @param activity       当前活动
      * @return true 有权限，false 没有权限
      */
     public static boolean checkPermission(Activity activity, String permissionName) {
@@ -48,15 +48,11 @@ public class FunctionsToolset {
 
     }
 
-    void pm(Activity activity, String packageName) throws PackageManager.NameNotFoundException {
-        activity.getPackageManager().getPackageInfo(packageName, 0);
-    }
-
     /**
      * 设置状态栏颜色
      *
      * @param activity 当前活动
-     * @param color 颜色值
+     * @param color    颜色值
      */
     public static void setStatusBarColor(Activity activity, int color) {
         activity.getWindow().setStatusBarColor(color);
@@ -65,14 +61,14 @@ public class FunctionsToolset {
     /**
      * 弹出对话框
      *
-     * @param activity 当前活动
-     * @param title 标题
-     * @param message 内容
+     * @param activity       当前活动
+     * @param title          标题
+     * @param message        内容
      * @param positiveButton 按钮文字
-     * @param icon 图标
-     * @param cancelable 是否可以取消
+     * @param icon           图标
+     * @param cancelable     是否可以取消
      */
-    public static void showDialog(Activity activity, String title, String message, String positiveButton,int icon,boolean cancelable) {
+    public static void showDialog(Activity activity, String title, String message, String positiveButton, int icon, boolean cancelable) {
         new AlertDialog.Builder(activity)
                 .setTitle(title)
                 .setMessage(message)
@@ -80,6 +76,10 @@ public class FunctionsToolset {
                 .setIcon(icon)
                 .setCancelable(cancelable)
                 .show();
+    }
+
+    void pm(Activity activity, String packageName) throws PackageManager.NameNotFoundException {
+        activity.getPackageManager().getPackageInfo(packageName, 0);
     }
 }
 

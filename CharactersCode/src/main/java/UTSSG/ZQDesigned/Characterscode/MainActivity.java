@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
         textView.setText("版本号：" + appVersionname + "(" + appVersioncode + ")");
         //if (FunctionsToolset.isInstalled(this, "com.google.android.gms")) {}
         if (!FunctionsToolset.checkPermission(this, "android.permission.WRITE_EXTERNAL_STORAGE")) {
-            FunctionsToolset.requestPermission(this, "android.permission.WRITE_EXTERNAL_STORAGE",1);
+            FunctionsToolset.requestPermission(this, "android.permission.WRITE_EXTERNAL_STORAGE", 1);
         }
     }
 
 
-        @Override
+    @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             exit();
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void exit() {
         if ((System.currentTimeMillis() - exitTime) > 2500) {
-            Toast.makeText(getApplicationContext(),"再按一次返回退出程序",Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "再按一次返回退出程序", Toast.LENGTH_SHORT).show();
             exitTime = System.currentTimeMillis();
         } else {
             finish();
@@ -53,12 +53,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void entrance_onClick(View v) {
-        startActivity(new Intent(getApplicationContext(),MigrateActivity.class));
+        startActivity(new Intent(getApplicationContext(), MigrateActivity.class));
     }
 
 
-        public void button1_Onclick(View view) {
-            startActivity(new Intent(getApplicationContext(),DonateActivity.class));
-        }
-
+    public void button1_Onclick(View view) {
+        startActivity(new Intent(getApplicationContext(), DonateActivity.class));
     }
+
+}

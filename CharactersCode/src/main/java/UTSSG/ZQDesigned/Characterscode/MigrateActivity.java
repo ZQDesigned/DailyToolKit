@@ -30,23 +30,23 @@ public class MigrateActivity extends Activity {
         EditText name = findViewById(R.id.characters_input);
         String chractersStr = name.getText().toString();
 
-        if(TextUtils.isEmpty(chractersStr)) {//判断
+        if (TextUtils.isEmpty(chractersStr)) {//判断
             Toast.makeText(this, "请输入内容！", Toast.LENGTH_SHORT).show();
-            FunctionsToolset.showDialog(this, "提示","请输入内容！","返回",android.R.drawable.ic_dialog_alert,false);
+            FunctionsToolset.showDialog(this, "提示", "请输入内容！", "返回", android.R.drawable.ic_dialog_alert, false);
             return;
         }
 
         TextView result = findViewById(R.id.output);
         EditText result_long = findViewById(R.id.output_long);
         byte[] codeBit = chractersStr.getBytes("gb2312");// 获取汉字的字节数组
-        if(codeBit.length%2==0) {//判断
+        if (codeBit.length % 2 == 0) {//判断
             StringBuilder sb = new StringBuilder();
-            for (byte codeBit_tmp:codeBit) {
+            for (byte codeBit_tmp : codeBit) {
                 codeBit_tmp -= 160;
 
                 if (codeBit_tmp < 0) {
                     Toast.makeText(this, "您输入的内容不合法！", Toast.LENGTH_SHORT).show();
-                    FunctionsToolset.showDialog(this,"提示","您输入的内容不合法！","返回",android.R.drawable.ic_dialog_alert,false);
+                    FunctionsToolset.showDialog(this, "提示", "您输入的内容不合法！", "返回", android.R.drawable.ic_dialog_alert, false);
                     return;
                 } else if (codeBit_tmp < 10) {
                     sb.append(0);
@@ -54,11 +54,11 @@ public class MigrateActivity extends Activity {
                 sb.append(codeBit_tmp);
             }
             Toast.makeText(this, "正在查询......", Toast.LENGTH_SHORT).show();
-            result.setText("转换结果："+sb.toString().replaceAll(".{4}", "$0 "));
-            result_long.setText("转换结果："+sb.toString().replaceAll(".{4}", "$0 "));
-        }else{
+            result.setText("转换结果：" + sb.toString().replaceAll(".{4}", "$0 "));
+            result_long.setText("转换结果：" + sb.toString().replaceAll(".{4}", "$0 "));
+        } else {
             Toast.makeText(this, "您输入的内容不合法！", Toast.LENGTH_SHORT).show();
-            FunctionsToolset.showDialog(this,"提示","您输入的内容不合法！","返回",android.R.drawable.ic_dialog_alert,false);
+            FunctionsToolset.showDialog(this, "提示", "您输入的内容不合法！", "返回", android.R.drawable.ic_dialog_alert, false);
         }
 
     }

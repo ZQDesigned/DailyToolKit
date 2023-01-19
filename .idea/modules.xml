@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/汉字区位码查询器.iml" filepath="$PROJECT_DIR$/.idea/modules/汉字区位码查询器.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/汉字区位码查询器.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DailyToolKit.iml" filepath="$PROJECT_DIR$/.idea/modules/DailyToolKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DailyToolKit.CharactersCode.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DailyToolKit.CharactersCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DailyToolKit.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DailyToolKit.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DailyToolKit.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DailyToolKit.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DailyToolKit.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DailyToolKit.app.unitTest.iml" />
     </modules>
   </component>
 </project>
