@@ -12,6 +12,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/CharactersCode" />
+            <option value="$PROJECT_DIR$/MorseCode" />
           </set>
         </option>
       </GradleProjectSettings>
